@@ -132,6 +132,8 @@ document.getElementById("mathOutput").innerHTML = mathResults;
 // - check if a result is greater than a certain value
 //
 
+// First if/else: explain whether the third value converts successfully.
+
 let validationMessage;
 
 if (Number.isNaN(thirdNumber)) {
@@ -141,6 +143,7 @@ else {
     validationMessage = "The value &quot;" + thirdValue + "&quot; is a valid number.";
 }
 
+// Second if/else: use the numeric average to determine passing status.
 let grade;
 
 if (averageScore >= 70) {
